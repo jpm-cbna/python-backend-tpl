@@ -1,0 +1,216 @@
+{
+	"info": {
+		"_postman_id": "2299384a-3e73-4d7f-8e70-4ab626bb3f5f",
+		"name": "Taxon Concept",
+		"description": "API of Taxon Concept project.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/versions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:50000/versions",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "50000",
+					"path": [
+						"versions"
+					]
+				},
+				"description": "Fournit les versions des bibliothèques et langages utilisées par l'API."
+			},
+			"response": []
+		},
+		{
+			"name": "/descriptions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:50000/descriptions",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "50000",
+					"path": [
+						"descriptions"
+					]
+				},
+				"description": "Fournit les versions des bibliothèques et langages utilisées par l'API."
+			},
+			"response": []
+		},
+		{
+			"name": "/descriptions/<int:descId>",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:50000/descriptions/1",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "50000",
+					"path": [
+						"descriptions",
+						"1"
+					]
+				},
+				"description": "Fournit les versions des bibliothèques et langages utilisées par l'API."
+			},
+			"response": []
+		},
+		{
+			"name": "/descriptions",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"mnemonic\": \"Genre species\",\n\t\"rank\": \"SP\",\n\t\"rawText\": \"Description complète de l'espèce tel que dans la publication.\"\n}"
+				},
+				"url": {
+					"raw": "http://0.0.0.0:50000/descriptions",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "50000",
+					"path": [
+						"descriptions"
+					]
+				},
+				"description": "Fournit les versions des bibliothèques et langages utilisées par l'API."
+			},
+			"response": []
+		},
+		{
+			"name": "/descriptions/<int:descId>",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"mnemonic\": \"Lixus iridis\",\n\t\"rank\": \"SP\",\n\t\"rawText\": \"TEST ! Gen. LIXUS FABRIUS, Syst. Eleuther., II, 1801, p. 498.\\n(Scuphomol'phus MOTSCH.,Bull. Ac. St Pétersbourg, 1860, II, p. 541.-\\nMonographie: CAPIOMONT,Ann. Soc. ent. Fr., 1874, p. 469, et 1875,\\np. 41,275 et 449. - DESBROCHERS,Le Frelon, vol. XII, 1904. - PÉTRI,\\nWien. ent. Zeitschr., 1904, p. 186 (1905), p. 34. - REITTER: Fauna\\nGerm., V, 1916, p. 88 (Subgen.) - HUSTACHE Cure. Gallo-Rhénans in\\nAnn. Soc. ent. Fr., XCVI (1927), p. 272).\\nRostre le plus souvent cylindrique, parfois subdépnmé ; scrobes médians\\nou anté-médians, rarement post-médians, non réunis en dessous du rostre~\\nAntennes variables; funicule de 7 articles, les deux premiers en général\\nplus 'longs que les autres, le dernier contigu à la massue, mais moins\\nadhérent à celle-ci que chez les Cleonini. Yeux oblongS, rarement arrondis.\\nProthorax a lobes oculaires parfois nuls, son botd latéral cilié dans sa\\npartie inférieure. Élytres allongés, plus ou moins cylindriques. Métasternum long. Revêtement dorsal finement pubescent, recouvert d'une\\npulvérulence jaune, ferrugineuse, cendrée ou rougeâtre qu'une sécrétion\\npeut renouveler pendant la vie de l'insecte.\\nChez les mâles, le rostre est plus court, plus épais et souvent plus\\nf&rtement sculpté que chez la femelle.\\nGenre très nombreux, comprenant plusieurs centaines d'espèces distribue es\\nsur tout le globe; la faune paléarctique en compte environ 160 dont 27 dans\\nnotre pays. Plusieurs auteurs parmi lesquels SCHONHERR,DESBROCHERS,\\nPÉTRI ont créé des divisions, élevées au rang de sous-genres, par REITTER,\\nque nous n'avons pas cru nécessaire de maintenir pour les espèces de notre\\nfaune.\\nCes insectes sont très polyphages aussi bien à l'état larvaire qu'à l'état\\nadulte (1). Ils sont inféodés aux Ombellifères, Chénopodiacées, Polygonacées,\\nCaryophyllacées, Crucifères, Composées, Papilionacées, Capparidacées, Malvacées, Géraniacées.\\nLes larves de plusieurs espèces sont bien connues (2). Chez les espèces\\ndont les larves attaquent les racines, la ponte est déposée soit à la base des\\npétioles des feuilles caulinaires, soit au collet même de la plan~e ; les j~unes\\nlarves gagnent la partieradiculaiœ, provoquant des réactions varIables\\npendant le cours de leur acheminement et, définitivement, des cécidit)s plus\\nou moins importantes. Certaines larves attaquent la tige, dans les entrenœuds, d'autres se nourrissent des boutons et des fleurs en voie de développement.\\n\\n(1) Les espèces des régions intertropicales se rencontrent presque exclusivement sur\\nle feuillage des arbres, il. l'état adulte.\\n(2) FALCOZ, Ann. Epiphyties, nO 3, 1926. Caractères génériques larvaires.\\n\"\n}"
+				},
+				"url": {
+					"raw": "http://0.0.0.0:50000/descriptions/1",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "50000",
+					"path": [
+						"descriptions",
+						"1"
+					]
+				},
+				"description": "Fournit les versions des bibliothèques et langages utilisées par l'API."
+			},
+			"response": []
+		},
+		{
+			"name": "/descriptions/<int:descId>",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:50000/descriptions/4",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "50000",
+					"path": [
+						"descriptions",
+						"4"
+					]
+				},
+				"description": "Fournit les versions des bibliothèques et langages utilisées par l'API."
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "oauth2",
+		"oauth2": [
+			{
+				"key": "accessToken",
+				"value": "yG4xY1X0G7mo4lIL0gLZTPKSPj96VaQV",
+				"type": "string"
+			},
+			{
+				"key": "tokenType",
+				"value": "Bearer",
+				"type": "string"
+			},
+			{
+				"key": "addTokenTo",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "2946cd52-60f4-477b-9368-73056db03833",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "1de65d80-4f3a-4569-bdb1-c734af1b6f55",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

@@ -1,0 +1,17 @@
+pathes:
+    root: '{tc_root_dir}'
+    config: '{tc_root_dir}/config'
+    database: '{tc_root_dir}/resources/database'
+database:
+    path: '{tc_root_dir}/resources/database/taxon_concept.sqlite3'
+    host: localhost
+    port: '5432'
+    name: taxon_concept
+    user: demo
+    password: demo
+    # Database engine : sqlite, postgresql
+    engine: sqlite
+logging:
+    pathes:
+        config: '{tc_root_dir}/config/logging.yml'
+        storage: '{tc_root_dir}/var/log/api.log'
