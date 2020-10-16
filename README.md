@@ -17,7 +17,7 @@ Pour installer ce projet :
 
 Le dossier `resources/postman/` contient une collection [Postman](https://www.postman.com/downloads/) permettant de tester les web services.
 
-Ce projet contient aussi le code utilisant une authentification à base de JWT qui s'appuie sur [le service Auth0](https://auth0.com/fr/).
+Ce projet contient aussi le code utilisant une authentification à base de [JWT](https://jwt.io/) qui s'appuie sur [le service Auth0](https://auth0.com/fr/).
 Toutefois, il n'est pas actif par défaut car cela demande de créer un compte et de le configurer.
 Les décorateurs assurant l'authentification des web services POST, PUT et DELETE sont donc commentés.
 
