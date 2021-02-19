@@ -63,7 +63,7 @@ function main() {
 
     #+----------------------------------------------------------------------------------------------------------+
     # Start script
-    printInfo "Taxon Concept bootstrap script started at: ${fmt_time_start}"
+    printInfo "${app_name} bootstrap script started at: ${fmt_time_start}"
 
     #+----------------------------------------------------------------------------------------------------------+
     runFlask

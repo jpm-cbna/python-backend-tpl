@@ -26,6 +26,10 @@
 # shellcheck disable=SC2034
 # SOURCE: https://github.com/ralish/bash-script-template/blob/stable/source.sh
 function initScript() {
+    # Application
+    app_name="My Application"
+    app_code="MY-APP"
+
     # Script time
     readonly time_start="$(date +%s)"
     readonly fmt_time_start="$(date -d @${time_start} "+%Y-%m-%d %H:%M:%S")"

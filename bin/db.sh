@@ -29,7 +29,7 @@ function main() {
 
     #+----------------------------------------------------------------------------------------------------------+
     # Start script
-    printInfo "Taxon Concept Flask-Migrate DB script started at: ${fmt_time_start}"
+    printInfo "${app_name} Flask-Migrate DB script started at: ${fmt_time_start}"
 
     #+----------------------------------------------------------------------------------------------------------+
     runFlaskDb "${@}"

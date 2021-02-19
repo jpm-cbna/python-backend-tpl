@@ -67,7 +67,7 @@ function main() {
 
     #+----------------------------------------------------------------------------------------------------------+
     # Start script
-    printInfo "Taxon Concept install script started at: ${fmt_time_start}"
+    printInfo "${app_name} install script started at: ${fmt_time_start}"
 
     #+----------------------------------------------------------------------------------------------------------+
     # TODO: install system packages + sqlite3-devel. See: https://github.com/pyenv/pyenv/wiki/Common-build-problems
@@ -133,7 +133,8 @@ function downloadPyenv() {
         printMsg "Download and install Pyenv..."
         curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
     else
-        printPretty "Pyenv already installed..." ${Gra-}
+        printPretty "Pyenv already installed. Updating..." ${Gra-}
+        cd "${PYENV_ROOT}" && git pull && cd -
     fi
 }
 
